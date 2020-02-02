@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,36 @@
     <link rel="stylesheet" href="./site.css">
     <title>Document</title>
 </head>
+
 <body>
+    <style>
+        .div2 {
+            position: relative;
+            top: 0px;
+            left: 10px;
+            height: 11px;
+            width: 10px;
+            z-index: 10;
+            background-image: url("./src/Assets/refresh-arrow.png");
+            background-size: cover;
+            filter: drop-shadow(103px -81px 0px rgb(85, 85, 85));
+            backface-visibility: hidden;
+        }
+
+        .div1 {
+            position: relative;
+            top: 0px;
+            left: 10px;
+            height: 15px;
+            width: 15px;
+            z-index: 10;
+            background: white;
+            background-size: cover;
+            filter: drop-shadow(100px -68px 0px #f3f3f3);
+            backface-visibility: hidden;
+
+        }
+    </style>
     <div class="div1">
 
     </div>
@@ -15,4 +45,5 @@
 
     </div>
 </body>
+
 </html>

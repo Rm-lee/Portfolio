@@ -14,6 +14,7 @@ background:white;
 background-image: url(${lock});
 background-size:cover;
 filter: drop-shadow(108px -60px 0px #f8f8f8);
+backface-visibility: hidden;
 
 
 `
@@ -37,8 +38,9 @@ width:10px;
 height:100%;
 background:red;
 left:50px;
-top:-200px;
+top:50px;
 z-index:3;
+filter: drop-shadow(50px -10px 80px #000099);
 
 `
 const Hex = styled.div`
@@ -46,7 +48,6 @@ position:absolute;
 margin-top:10%;
 margin-left:10%; 
 transition:all 1ms, left 2s, top 2s;
-backface-visibility: hidden
 top:${props => props.top} ;
 left:${props => props.left};
 width:100px;
@@ -82,8 +83,8 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
  function Hexagons() {
   return (
     <>
-    <Arrow/>
-    <Arrow2/>
+ <Arrow/>
+ <Arrow2/>
 
      <HexCont className="hex-container">
 
