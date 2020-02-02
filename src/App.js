@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Route} from 'react-router-dom'
+import Landing from './components/Landing'
+import Navigation from './components/Navigation/Navigation'
+import Projects from './components/Portfolio/Projects'
+import Skills from './components/Skills'
+import Hexagons from './components/Hexagons'
 
+import styled from 'styled-components'
+
+const StyledApp = styled.div`
+display:flex;
+flex-direction:column;
+overflow-y:scroll;
+`
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledApp>
+      <Hexagons />
+     <Route exact path="/" component={Landing} />
+     <Projects />
+     <Route exact path="/skills" component = {Skills}/>
+
+    </StyledApp>
   );
 }
 
