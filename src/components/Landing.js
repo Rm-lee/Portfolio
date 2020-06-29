@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'
-import arrow from '../Assets/arrow.png'
 import Navigation from '../components/Navigation/Navigation'
 import Hexagons from '../components/Hexagons'
 

@@ -1,7 +1,6 @@
-import React,{useEffect, useState, useRef} from 'react';
+import React from 'react';
 import styled from "styled-components";
-import {Link,NavLink} from 'react-router-dom'
-import pic from '../../Assets/profile.jpeg'
+import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as Icons from '@fortawesome/free-brands-svg-icons'
 
@@ -105,15 +104,11 @@ function Navigation(props) {
 
 
 function mouseOver() {
- const hexCont = document.querySelector(".hex-container");
  const projSlid = document.querySelector("#proj-slide");
  projSlid.style['animation'] = 'popIn 1s forwards'
  
 }
 
-function mouseOverHexChange() {
-    const hexCont = document.querySelector(".hex-container");
-   }
  return (
  
   <NavBar>

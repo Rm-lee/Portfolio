@@ -2,10 +2,8 @@ import React from 'react';
 import './App.css';
 import {Route} from 'react-router-dom'
 import Landing from './components/Landing'
-import Navigation from './components/Navigation/Navigation'
 import Projects from './components/Portfolio/Projects'
 import Skills from './components/Skills'
-import Hexagons from './components/Hexagons'
 
 import styled from 'styled-components'
 

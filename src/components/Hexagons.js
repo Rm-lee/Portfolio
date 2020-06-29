@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components'
-import refresh from '../Assets/refresh-arrow.png'
-import lock from '../Assets/lock.png'
 
 const HexCont = styled.div`
 position:relative;
