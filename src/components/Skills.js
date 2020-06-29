@@ -12,7 +12,8 @@ function Skills(props) {
     box-shadow: 5px 10px 20px #888888;
     padding:20px;
     min-width:400px;
-    
+    max-width:600px;
+
 
     `
 
