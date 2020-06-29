@@ -6,7 +6,7 @@ import guidr from '../../Assets/guidr.png'
 import greatidea from '../../Assets/greatidea.png'
 import vid2jsonimg from '../../Assets/vid2jsonimg.png'
 import pykey from '../../Assets/pykey.png'
-
+import savethisjob from '../../Assets/savethisjob.gif'
 const ProjSideSlide = styled.div`
 height:100vh;
 max-width:500px;
@@ -57,11 +57,12 @@ function Projects(props) {
  return (
   <ProjSideSlide onMouseLeave={close}id="proj-slide">
   <InnerSLide >
-  <ProjectCard image={wander} name={"wanderLust"}/>
-  <ProjectCard image={guidr} name={"Guidr"}/>
-  <ProjectCard image={greatidea} name={"Great Idea"}/>
-  <ProjectCard image={vid2jsonimg} name={"Vid2Json"}/>
-  <ProjectCard image={pykey} name={"Py-Key"}/>
+  <ProjectCard url={"https://savethisjob.com"}image={savethisjob} name={"SaveThisJob"}/>
+  <ProjectCard  url={"https://wanderlust19.netlify.app/"} image={wander} name={"wanderLust"}/>
+  <ProjectCard url={"https://guidrpro.netlify.app/"}image={guidr} name={"Guidr"}/>
+  <ProjectCard url={"https://github.com/Rm-lee/User-Interface/tree/Roger-Lee"}image={greatidea} name={"Great Idea"}/>
+  <ProjectCard url={"https://github.com/Rm-lee/Vid-to-Json"}image={vid2jsonimg} name={"Vid2Json"}/>
+  <ProjectCard url={"https://github.com/Rm-lee"}image={pykey} name={"Py-Key"}/>
 
   </InnerSLide>
   </ProjSideSlide>

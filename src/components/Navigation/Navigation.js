@@ -100,18 +100,8 @@ margin:0 30px 0;
 
 
 function Navigation(props) {
- 
-function mouseOverSkills() {
-    let top = 20;
-    const hexagons = document.querySelectorAll(".hex")
-    hexagons.forEach(el => { 
-        el.style['margin-top'] = '0px'
-        el.style['left'] = `50px`;
-        el.style['top'] = `${top}px`;
-        top += 120;
-    })
- 
-}
+    
+  
 
 
 function mouseOver() {
@@ -128,15 +118,15 @@ function mouseOverHexChange() {
  
   <NavBar>
 <LinkContainer>
-   <LinkDiv onMouseOver={mouseOverSkills} to="/skills"> Skills</LinkDiv>
+   <LinkDiv  to="/skills"> Skills</LinkDiv>
    <LinkDiv  onMouseOver={mouseOver} to="/projects"> Projects</LinkDiv>
-   <LinkDiv onMouseOver={mouseOverHexChange}to="/about"> About</LinkDiv>
   </LinkContainer>
   <Social>
       <a href="https://www.linkedin.com/in/roger-m-lee/"><FontAwesomeIcon icon={Icons.faLinkedin} size="2x"/> </a>
       <a href="https://github.com/Rm-lee"><FontAwesomeIcon icon={Icons.faGithub} size="2x"/></a>
       </Social>
       </NavBar> 
+ 
  );
 }
 

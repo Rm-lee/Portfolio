@@ -2,36 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 import refresh from '../Assets/refresh-arrow.png'
 import lock from '../Assets/lock.png'
-const Arrow = styled.div`
-position:relative;
-top:0px;
-left:10px;
-height:15px;;
-width:15px;
-color:white;
-z-index:10;
-background:white;
-background-image: url(${lock});
-background-size:cover;
-filter: drop-shadow(108px -60px 0px #f8f8f8);
-backface-visibility: hidden;
 
-
-`
-const Arrow2 = styled.div`
-position:relative;
-top:0px;
-left:10px;
-height:15px;;
-width:15px;
-color:white;
-z-index:10;
-background-image: url(${lock});
-background-size:cover;
-filter: drop-shadow(108px -75px 0px #7f7f7f);
-
-
-`
 const HexCont = styled.div`
 position:relative;
 width:10px;
@@ -87,18 +58,17 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
      <HexCont className="hex-container">
 
-<Hex className="hex" background="blue" top="-50px" left="-50px" content="  CSS" />
-<Hex className="hex" background="blue" top="-50px" left="155px" content=" HTML" />
-<Hex className="hex" background="blue" top="-50px" left="53px" content="   JS" />
-<Hex className="hex" background="blue" top="30px" left="105px" content="Python" />
-<Hex className="hex" background="blue" top="30px" left="-105px" content="---------" />
-<Hex className="hex" background="blue" top="188px" left="-105px" content="---------" />
-
-<Hex className="hex" background="blue" top="30px" left="2px" content="React" />
-<Hex className="hex" background="blue" top="110px" left="-50px" content=" Node" />
-<Hex className="hex" background="blue" top="110px" left="55px" content="Express" />
-<Hex className="hex" background="blue" top="188px" left="3px" content=" Less" />
-<Hex className="hex" background="blue" top="266px" left="-50px" content="Redux" />
+<Hex onClick={() => window.open("https://github.com/Rm-lee/Portfolio")}className="hex" id="hex1" background="blue" top="-50px" left="-50px" content="  CSS"/>
+<Hex onClick={() => window.open("https://github.com/Rm-lee/User-Interface/tree/Roger-Lee")} className="hex" id="hex2"background="blue" top="-50px" left="155px" content=" HTML" />
+<Hex onClick={() => window.open("https://savethisjob.com")}className="hex" id="hex3" background="blue" top="-50px" left="53px" content="   JS" />
+<Hex onClick={() => window.open("https://github.com/Rm-lee/Forgit2Commit")} className="hex" id="hex4" background="blue" top="30px" left="105px" content="Python" />
+<Hex onClick={() => window.open("https://github.com/BWPTWanderLand2/Backend")}className="hex" id="hex5"  background="blue" top="30px" left="-105px" content="  SQL" />
+<Hex onClick={() => window.open("https://github.com/Rm-lee/eddy")}className="hex" id="hex6"  background="blue" top="188px" left="-105px" content="Linux" />
+<Hex onClick={() => window.open("https://savethisjob.com")}className="hex"  id="hex7" background="blue" top="30px" left="2px" content="React" />
+<Hex onClick={() => window.open("https://github.com/Rm-lee/PObox")}className="hex"  id="hex8" background="blue" top="110px" left="-50px" content=" Node" />
+<Hex onClick={() => window.open("https://github.com/BWPTWanderLand2/Backend")}className="hex" id="hex9"  background="blue" top="110px" left="55px" content="Express" />
+<Hex onClick={() => window.open("https://github.com/Rm-lee/Sprint-Challenge--Advanced-CSS")}className="hex" id="hex10"  background="blue" top="188px" left="3px" content=" Less" />
+<Hex onClick={() => window.open("https://savethisjob.com")}className="hex" id="he11"  background="blue" top="266px" left="-50px" content="Redux" />
 
 
 

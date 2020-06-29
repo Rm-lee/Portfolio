@@ -17,7 +17,6 @@ overflow-y:scroll;
 function App() {
   return (
     <StyledApp>
-      <Hexagons />
      <Route exact path="/" component={Landing} />
      <Projects />
      <Route exact path="/skills" component = {Skills}/>

@@ -19,7 +19,7 @@ function ProjectCard(props) {
     <>
     <Card>
     <CardImg src={props.image}/> 
-       <h1>{props.name}</h1>
+       <h1><a style={{textDecoration:"none",color:"white"}}href={props.url}>{props.name}</a></h1>
 
     </Card>
     </>
