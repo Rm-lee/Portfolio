@@ -83,8 +83,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
  function Hexagons() {
   return (
     <>
- <Arrow/>
- <Arrow2/>
+ 
 
      <HexCont className="hex-container">
 
