@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react';
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 import Hexagons from './Hexagons'
 function Skills(props) {
     const Page = styled.div`
@@ -15,6 +16,17 @@ function Skills(props) {
     max-width:600px;
 
 
+    `
+    const Div = styled(Link)`
+    display:flex;
+    justify-content:center;
+    margin: 0 auto;
+    box-shadow: 4px 3px 4px #888888;
+    width:100px;
+    background-color:#f7f7f7;
+    text-decoration:none;
+    padding:5px;
+    color:black;
     `
 
     useEffect(() => { 
@@ -51,7 +63,10 @@ function Skills(props) {
 developing web sites/apps using HTML, CSS, React, JavaScript, Redux and Node. Experience building products for desktop with Python. Nearly a
 decade of experience with troubleshooting networked systems. Familiar with Linux systems and basic Linux administration as well as scripting
 languages including Bash and Python.</p>
-</SkillsDiv>
+<br />
+<Div to="/">
+Home
+</Div></SkillsDiv>
     </div>
     </Page>
     </>
