@@ -158,11 +158,14 @@ transform: skew(0deg, -10deg);
 
 
 `
+const Brand = styled.h2`
+padding-top:20px;
+
+`
 function Landing(props) {
 
   return (
     <>
-     
      <Hexagons />
 
       <FloatContainer>
@@ -177,9 +180,9 @@ function Landing(props) {
 
             <Customh2>With a Unique Perspective</Customh2>
           </Containerh>
-
         </CustomImg>
         <Navigation />
+        <Brand >Roger Lee</Brand>
 
         {/* <Scene/> */}
 
