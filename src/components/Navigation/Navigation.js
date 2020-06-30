@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import styled from "styled-components";
 import {Link} from 'react-router-dom'
+import {Icon} from 'semantic-ui-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as Icons from '@fortawesome/free-brands-svg-icons'
 
@@ -101,11 +102,18 @@ margin:0 30px 0;
 function Navigation(props) {
     
   
-
+useEffect(() => {
+    return () => {
+        const projSlid = document.querySelector("#proj-slide");
+        projSlid.style['animation'] = 'popOut .5s forwards'
+        
+    }
+}, [])
 
 function mouseOver() {
  const projSlid = document.querySelector("#proj-slide");
  projSlid.style['animation'] = 'popIn 1s forwards'
+ 
  
 }
 
@@ -116,9 +124,10 @@ function mouseOver() {
    <LinkDiv  to="/skills"> Skills</LinkDiv>
    <LinkDiv  onMouseOver={mouseOver} to="/projects"> Projects</LinkDiv>
   </LinkContainer>
-  <Social>
+  <Social style={{display:"flex",justifyContent:"space-around",width:"75%"}}>
       <a href="https://www.linkedin.com/in/roger-m-lee/"><FontAwesomeIcon icon={Icons.faLinkedin} size="2x"/> </a>
       <a href="https://github.com/Rm-lee"><FontAwesomeIcon icon={Icons.faGithub} size="2x"/></a>
+      <a href="mailto:rmlee0005@gmail.com?subject=We Like Your Work" target="_blank" rel="noopener noreferrer"><Icon name="mail" size="big"/></a>
       </Social>
       </NavBar> 
  

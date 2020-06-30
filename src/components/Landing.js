@@ -4,15 +4,15 @@ import Navigation from '../components/Navigation/Navigation'
 import Hexagons from '../components/Hexagons'
 
 const FloatContainer = styled.div`
-width:50%;
+width:100%;
 display:flex;
 flex-direction:column;
 justify-content:center;
 height:100vh;
 align-items:center;
 z-index:1;
-transform: translate(50%,0);
-
+transform: translate(0,0);
+overflow-y:hidden;
 
 `
 
@@ -23,14 +23,7 @@ width:300px;
 transform: skew(0deg, -10deg);
 font-size:2rem;
 text-align:center;
-animation: pulse 5s ;
-@keyframes pulse {
-  0% {
-    color: transparent;
-  }
-  100% {
-   color: #1d1d1d;
-  }
+
 }
 `
 

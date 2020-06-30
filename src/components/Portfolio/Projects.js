@@ -7,6 +7,7 @@ import greatidea from '../../Assets/greatidea.png'
 import vid2jsonimg from '../../Assets/vid2jsonimg.png'
 import pykey from '../../Assets/pykey.png'
 import savethisjob from '../../Assets/savethisjob.gif'
+import pobox from '../../Assets/poboxSC.png'
 const ProjSideSlide = styled.div`
 height:100vh;
 max-width:500px;
@@ -47,6 +48,7 @@ overflow-y:auto;
 
 `
 
+
 function close(){
     const projSlid = document.querySelector("#proj-slide");
     projSlid.style['animation'] = 'popOut 1s forwards'
@@ -57,6 +59,8 @@ function Projects(props) {
  return (
   <ProjSideSlide onMouseLeave={close}id="proj-slide">
   <InnerSLide >
+  <ProjectCard url={"https://github.com/Rm-lee/PObox"}image={pobox} name={"PoBox"}/>
+
   <ProjectCard url={"https://savethisjob.com"}image={savethisjob} name={"SaveThisJob"}/>
   <ProjectCard  url={"https://wanderlust19.netlify.app/"} image={wander} name={"wanderLust"}/>
   <ProjectCard url={"https://guidrpro.netlify.app/"}image={guidr} name={"Guidr"}/>
