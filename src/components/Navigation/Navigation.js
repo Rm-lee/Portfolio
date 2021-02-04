@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import styled from "styled-components";
 import {Link} from 'react-router-dom'
 import {Icon} from 'semantic-ui-react'
@@ -102,27 +102,28 @@ margin:0 30px 0;
 function Navigation(props) {
     
   
-useEffect(() => {
-    return () => {
-        const projSlid = document.querySelector("#proj-slide");
-        projSlid.style['animation'] = 'popOut .5s forwards'
+// useEffect(() => {
+//     return () => {
+//         const projSlid = document.querySelector("#proj-slide");
+//         projSlid.style['animation'] = 'popOut .5s forwards'
         
-    }
-}, [])
+//     }
+// }, [])
 
-function mouseOver() {
- const projSlid = document.querySelector("#proj-slide");
- projSlid.style['animation'] = 'popIn 1s forwards'
+// function mouseOver() {
+//  const projSlid = document.querySelector("#proj-slide");
+//  projSlid.style['animation'] = 'popIn 1s forwards'
  
  
-}
+// }
+let path = window.location.pathname;
 
  return (
  
   <NavBar>
 <LinkContainer>
    <LinkDiv  to="/skills"> Skills</LinkDiv>
-   <LinkDiv  onMouseOver={mouseOver} to="/projects"> Projects</LinkDiv>
+   <LinkDiv style={path === "/projects"? {color:"darkblue",textDecoration:"underline"}:null} to="/projects"> Projects</LinkDiv>
   </LinkContainer>
   <Social style={{display:"flex",justifyContent:"space-around",width:"75%"}}>
       <a href="https://www.linkedin.com/in/roger-m-lee/"><FontAwesomeIcon icon={Icons.faLinkedin} size="2x"/> </a>

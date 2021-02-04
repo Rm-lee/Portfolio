@@ -1,9 +1,18 @@
 import React from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react'
 
-const ProjectPageCard = (props) => (
-    <div style={{minWidth:"35%",justifyContent:"center"}}>
-  <Card onClick={() => window.open(props.url)}style={{margin:"20px",width:"400px",borderRadius:"5px"}}>
+function ProjectPageCard  (props) {
+
+  function openUrl(){
+    window.open(props.url)
+  } 
+
+
+
+  return (
+    <div onClick={openUrl}style={{minWidth:"35%",justifyContent:"center",cursor:'pointer'}}>
+  
+  <Card style={{margin:"20px",width:"400px",borderRadius:"5px"}}>
     <Image src={props.image} size="massive" />
     <Card.Content>
       <Card.Header>{props.name}</Card.Header>
@@ -21,6 +30,7 @@ const ProjectPageCard = (props) => (
   </Card>
   </div>
 )
+}
 
 
 
