@@ -26,11 +26,19 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 &:hover{
   transform:scale(1.1);
   cursor:pointer;
+  z-index:1;
+  background:linear-gradient(to top, rgba(75,232,224,1) 0%, rgba(222,222,222,1) 12%, rgba(255,255,255,1) 100%);;
+
+  left: ${props => {
+    if(props.content === "  SQL" || props.content === "Linux"){
+      return "-50px"
+    }
+  }}
+  
 }
 &:hover:after{
-    border-left:6px solid white;
-    
-  }
+  border-left:6px solid white;
+}
 &:after{
   
   display:flex;
