@@ -61,7 +61,7 @@ function Projects(props) {
   <InnerSLide >
   <ProjectCard url={"https://github.com/Rm-lee/PObox"}image={pobox} name={"PoBox"}/>
 
-  <ProjectCard url={"https://savethisjob.com"}image={savethisjob} name={"SaveThisJob"}/>
+  <ProjectCard url={"https://github.com/Lambda-School-Labs/job-book-fe"}image={savethisjob} name={"SaveThisJob"}/>
   <ProjectCard  url={"https://wanderlust19.netlify.app/"} image={wander} name={"wanderLust"}/>
   <ProjectCard url={"https://guidrpro.netlify.app/"}image={guidr} name={"Guidr"}/>
   <ProjectCard url={"https://github.com/Rm-lee/User-Interface/tree/Roger-Lee"}image={greatidea} name={"Great Idea"}/>
