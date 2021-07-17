@@ -29,7 +29,7 @@ function ProjectsPage() {
        </div>
         <div style={{width:"90%",display:"flex",flexDirection:"row",flexWrap:"wrap",justifyContent:"center"}}>
              <ProjectsPageCard description={"Crossplatform Electron/react application for organizing coding projects and their resources"}url={"https://github.com/Rm-lee/PObox"}image={pobox} name={"PoBox"}/>
-             <ProjectsPageCard description={"Web app/chrome extension for organizing, saving and editing your current job search process"}url={"https://savethisjob.com"}image={savethisjob} name={"SaveThisJob"}/>
+             <ProjectsPageCard description={"Web app/chrome extension for organizing, saving and updating information for job hunting"} url={"https://github.com/Lambda-School-Labs/job-book-fe"} name={"SaveThisJob"}/>
             <ProjectsPageCard description={"Frontend react app for guides logging personal trips"} url={"https://wanderlust19.netlify.app/"} image={wander} name={"wanderLust"}/>
             <ProjectsPageCard description={"A simple react site to search for netlix hidden categories"}url={"https://getflix.netlify.app/"}image={getFlix} name={"GetFlix"}/>
             <ProjectsPageCard description={"Frontend react app for guides logging personal trips"}url={"https://guidrpro.netlify.app/"}image={guidr} name={"Guidr"}/>
