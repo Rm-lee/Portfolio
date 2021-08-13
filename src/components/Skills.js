@@ -60,13 +60,14 @@ function Skills(props) {
         <div style={{ marginLeft: "25%", marginTop: "10px" }}>
           <SkillsDiv><p style={{ fontSize: "2rem", width: "100%", textAlign: "center" }}>Skills</p>
             <p>Web Developer excelling in high paced work environments, finding solutions to challenges and focused on exceeding expectations. Proven experience
-            developing web sites/apps using HTML, CSS, React, JavaScript, Redux and Node. Experience building products for desktop with Python. Nearly a
-            decade of experience with troubleshooting networked systems. Familiar with Linux systems and basic Linux administration as well as scripting
-languages including Bash and Python.</p>
-            <br />
-            <Div to="/">
-              Home
-</Div></SkillsDiv>
+              developing web sites/apps using HTML, CSS, React, JavaScript, Redux and Node. Experience building products for desktop with Python. Nearly a
+              decade of experience with troubleshooting networked systems. Familiar with Linux systems and basic Linux administration as well as scripting
+              languages including Bash and Python.<br/><br/>I have a passion for coding and creating unique and usefull projects. Not only do I like to create from scratch but have also contributed to open source projects. 
+              I also participated in google chromiums bug bounty program after discovering a security vulnerability in Chrome on Linux. If you would like to take a look at some of the work
+              I have done, click on a skill. </p>
+            
+          <Div to="/">Home</Div>
+         </SkillsDiv>
         </div>
       </Page>
     </>
