@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import {Route} from 'react-router-dom'
 import Landing from './components/Landing'
-import Projects from './components/Portfolio/Projects'
 import Skills from './components/Skills'
 import ProjectsPage from './components/Portfolio/ProjectsPage'
 import styled from 'styled-components'
