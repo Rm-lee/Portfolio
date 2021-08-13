@@ -71,7 +71,7 @@ clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 <Hex onClick={() => window.open("https://github.com/Rm-lee/Forgit2Commit")} className="hex" id="hex4" background="blue" top="30px" left="105px" content="Python" />
 <Hex onClick={() => window.open("https://github.com/BWPTWanderLand2/Backend")}className="hex" id="hex5"  background="blue" top="30px" left="-105px" content="  SQL" />
 <Hex onClick={() => window.open("https://github.com/Rm-lee/eddy")}className="hex" id="hex6"  background="blue" top="188px" left="-105px" content="Linux" />
-<Hex onClick={() => window.open("https://savethisjob.com")}className="hex"  id="hex7" background="blue" top="30px" left="2px" content="React" />
+<Hex onClick={() => window.open("https://github.com/Lambda-School-Labs/job-book-fe)}className="hex"  id="hex7" background="blue" top="30px" left="2px" content="React" />
 <Hex onClick={() => window.open("https://github.com/Rm-lee/PObox")}className="hex"  id="hex8" background="blue" top="110px" left="-50px" content=" Node" />
 <Hex onClick={() => window.open("https://github.com/BWPTWanderLand2/Backend")}className="hex" id="hex9"  background="blue" top="110px" left="55px" content="Express" />
 <Hex onClick={() => window.open("https://github.com/Rm-lee/Sprint-Challenge--Advanced-CSS")}className="hex" id="hex10"  background="blue" top="188px" left="3px" content=" Less" />
