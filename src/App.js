@@ -22,7 +22,6 @@ function App() {
   return (
     <StyledApp>
      <Route exact path="/" component={Landing} />
-     <Projects />
      <Route exact path="/skills" component = {Skills}/>
      <Route exact path="/projects" component = {ProjectsPage}/>
 
